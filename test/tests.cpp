@@ -48,7 +48,7 @@ TEST(lab2,task1_1)
 {
 	const size_t n = 6;
 	int *val = new int[n]{5, 3, 2, 4, 1, 6};
-	lab2::msort(val, n);
+	lab2::mergesort(val, n);
 	int *expected = new int[n]{1, 2, 3, 4, 5, 6};
     
     for(size_t i = 0; i < n; i++)
@@ -61,7 +61,7 @@ TEST(lab2,task1_2)
 {
 	const size_t n = 6;
 	double val[n]{4.0, 3.0, 2.4, 2.5, 2.1, -1};
-	lab2::msort(val, n);
+	lab2::mergesort(val, n);
     double expected[n]{-1, 2.1, 2.4, 2.5, 3.0, 4.0};
     
     for(size_t i = 0; i < n; i++)
@@ -72,7 +72,7 @@ TEST(lab2,task1_3)
 {
 	const size_t n = 6;
 	char* val[n]{(char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr"};
-	lab2::msort(val, n);
+	lab2::mergesort(val, n);
     char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"fff2", (char*)"ffff", (char*)"fffrr"};
     
     for(size_t i = 0; i < n; i++)
